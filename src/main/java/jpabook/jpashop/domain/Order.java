@@ -49,6 +49,7 @@ public class Order {
         delivery.setOrder(this);
     }
 
+    //사용자가 주문 할 때 호출되는 메서드
     public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems) {
         Order order = new Order();
         order.setMember(member);
